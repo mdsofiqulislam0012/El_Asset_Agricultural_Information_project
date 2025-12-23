@@ -11,7 +11,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
-    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.5/css/dataTables.dataTables.min.css">
 </head>
 
 <body>
@@ -234,341 +234,569 @@
                 <div class="col-lg-6 offset-3 text-center">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptate nemo illum
                         doloremque enim eius, dolores culpa quam ab. Distinctio.</p>
+                    <hr>
                 </div>
 
-                <!-- nav and  -->
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <!-- nav and tab copy past -->
+                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="grains-tab" data-bs-toggle="tab"
-                            data-bs-target="#grains-tab-pane" type="button" role="tab" aria-controls="grains-tab-pane"
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
                             aria-selected="true">Grains</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="beans-tab" data-bs-toggle="tab" data-bs-target="#beans-tab-pane"
-                            type="button" role="tab" aria-controls="beans-tab-pane" aria-selected="false">Beans</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="fruits-tab" data-bs-toggle="tab" data-bs-target="#fruits-tab-pane"
-                            type="button" role="tab" aria-controls="fruits-tab-pane"
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
                             aria-selected="false">Fruits</button>
                     </li>
-                    
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                            aria-selected="false">Vegetable</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane"
+                            type="button" role="tab" aria-controls="all-tab-pane" aria-selected="false">All</button>
+                    </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="grains-tab-pane" role="tabpanel"
-                        aria-labelledby="grains-tab" tabindex="0">
-                        <!-- connect card -->
-                        <div class="container">
-                            <!-- card section -->
-                            <div class="row">
-                                <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/rice.jpeg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- dublicate -->
-                                <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/rice.jpeg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- dublicate -->
-                                <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/rice.jpeg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- dublicate -->
-                                <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/rice.jpeg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- dublicate -->
-                                <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/rice.jpeg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- dublicate -->
-                                <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/rice.jpeg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- dublicate -->
-                                <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/rice.jpeg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- dublicate -->
-                                <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/rice.jpeg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- dublicate -->
-                                <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/rice.jpeg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- dublicate -->
-                            </div>
-                            <!-- card section -->
-                        </div>
-                        <!-- connect card -->
-                    </div>
-                    <div class="tab-pane fade" id="beans-tab-pane" role="tabpanel" aria-labelledby="beans-tab"
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                         tabindex="0">
-                        <!-- connect card -->
+                        <!-- Grains Card -->
                         <div class="container">
-                            <!-- card section -->
                             <div class="row">
+                                <!-- first card -->
                                 <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/beans.webp" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/beans.webp" class="img-fluid rounded" alt="">
                                         </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
                                     </div>
                                 </div>
-                                <!-- dublicate -->
+                                <!-- 2nd card -->
                                 <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/beans1.webp" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/beans1.webp" class="img-fluid rounded" alt="">
                                         </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
                                     </div>
                                 </div>
-                                <!-- dublicate -->
+                                <!-- 3rd card -->
                                 <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/beans.webp" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/beans1.webp" class="img-fluid rounded" alt="">
                                         </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
                                     </div>
                                 </div>
-                                <!-- dublicate -->
+                                <!-- 4th card -->
                                 <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/beans1.webp" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/beans.webp" class="img-fluid rounded" alt="">
                                         </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
                                     </div>
                                 </div>
-                                <!-- dublicate -->
+                                <!-- 5th card -->
                                 <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/beans3.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/beans.webp" class="img-fluid rounded" alt="">
                                         </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
                                     </div>
                                 </div>
-                                <!-- dublicate -->
+                                <!-- six card -->
                                 <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/beans.webp" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/beans.webp" class="img-fluid rounded" alt="">
                                         </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
                                     </div>
                                 </div>
+                                <!-- end -->
                             </div>
-                            <!-- card section -->
                         </div>
-                        <!-- connect card -->
+                        <!-- Grains Card -->
+                    </div>
 
-                    </div>
-                    <div class="tab-pane fade" id="fruits-tab-pane" role="tabpanel" aria-labelledby="fruits-tab"
+
+
+
+
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
                         tabindex="0">
+                        <!-- Fruits card -->
                         <div class="container">
                             <div class="row">
+                                <!-- first card -->
                                 <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/fruits.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/fruits1.jpg" class="img-fluid rounded" alt="">
                                         </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
                                     </div>
                                 </div>
-                                <!-- dublicate -->
+                                <!-- 2nd card -->
                                 <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/fruits1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/fruits1.jpg" class="img-fluid rounded" alt="">
                                         </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
                                     </div>
                                 </div>
-                                <!-- dublicate -->
+                                <!-- 3rd card -->
                                 <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/fruits2.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/fruits1.jpg" class="img-fluid rounded" alt="">
                                         </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
                                     </div>
                                 </div>
-                                <!-- end -->
-                                <!-- dublicate -->
+                                <!-- 4th card -->
                                 <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/fruits1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/fruits1.jpg" class="img-fluid rounded" alt="">
                                         </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
                                     </div>
                                 </div>
+                                <!-- 5th card -->
                                 <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/fruits.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/fruits1.jpg" class="img-fluid rounded" alt="">
                                         </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
                                     </div>
                                 </div>
-                                <!-- dublicate -->
+                                <!-- six card -->
                                 <div class="col-lg-4 mt-5">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="/image/fruits2.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aman Rice</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the
-                                                card’s content.</p>
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/fruits1.jpg" class="img-fluid rounded" alt="">
                                         </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
                                     </div>
                                 </div>
                                 <!-- end -->
                             </div>
                         </div>
+                    </div>
+                    <!-- nav and tab copy past -->
+
+
+
+
+
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0">
+                        <!-- vegitables card -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/v1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/v1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/v1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/v1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/v1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/v1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- vegitables card -->
+                    </div>
+
+
+
+
+
+                    <div class="tab-pane fade" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+                        <!-- all card -->
+                        <div class="container">
+                            <div class="row">
+                                <!-- first card -->
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/fruits1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <!-- 2nd card -->
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/fruits1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <!-- 3rd card -->
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/fruits1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <!-- 4th card -->
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/fruits1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <!-- 5th card -->
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/fruits1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <!-- six card -->
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/fruits1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                            </div>
+
+
+
+
+
+
+                            <div class="row">
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/v1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/v1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/v1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/v1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/v1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-5">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="/image/v1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <h2 class="p-2">Aman Dhan</h2>
+                                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Fuga,
+                                            libero!
+                                            Lorem ipsum
+                                            dolor sit, amet consectetur adipisicing elit. Vitae, temporibus.</p>
+                                        <button class="btn btn-outline-success">See Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- all card -->
                     </div>
                 </div>
-                <!-- nav and  -->
             </div>
-        </div>
-        <!-- Rice varaetise -->
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <section class="Pest-Control-Strategies mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-3">
+                        <h1 class="text-success text-center fw-bold">Pest Control Strategies</h1>
+                        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quos quam
+                            molestias mollitia exercitationem obcaecati perspiciatis modi voluptatum non</p>
+                        <hr>
+                    </div>
 
+                    <!-- tabil -->
+                    <table id="myTable" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>First</th>
+                                <th>Last</th>
+                                <th>Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>@social</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- tabil -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 
     <!-- bootstrap connect -->
     <script src="/asset/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.5/css/dataTables.dataTables.min.css"></script>
     <script src="/asset/js/custome.js"></script>
 </body>
 
