@@ -20,7 +20,7 @@
         <nav>
             <nav class="navbar navbar-expand-lg bg-success">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand text-white" href="#">Navbar</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +32,13 @@
                                 <a class="nav-link text-light" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="#">Farming Guids</a>
+                                <a class="nav-link text-light" href="#Farming">Farming Guids</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link text-light">Crop Details</a>
+                                <a href="#riceVarities" class="nav-link text-light">Crop Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link text-light">Pets Control</a>
+                                <a href="#petsControl" class="nav-link text-light">Pets Control</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link text-light">Contact</a>
@@ -78,7 +78,7 @@
         </section>
 
         <!-- guids information -->
-        <section class="guids mt-5">
+        <section id="Farming" class="guids mt-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-3 text-center fw-bold text-success">
@@ -226,7 +226,7 @@
 
 
         <!-- Rice varaetise -->
-        <div class="container">
+        <div id="riceVarities" class="container">
             <div class="row">
                 <div class="col-lg-6 offset-3 text-center fw-bold text-success mt-5">
                     <h1>Rice Varietise</h1>
@@ -240,9 +240,8 @@
                 <!-- nav and tab copy past -->
                 <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                            aria-selected="true">Grains</button>
+                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Grains</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
@@ -745,7 +744,8 @@
             </div>
     </header>
     <main>
-        <section class="Pest-Control-Strategies mt-5">
+        <!-- pets control section -->
+        <section id="petsControl" class="Pest-Control-Strategies mt-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-3">
@@ -791,8 +791,55 @@
                 </div>
             </div>
         </section>
+        <!-- pets control section -->
     </main>
-    <footer></footer>
+    <footer>
+        <!-- contact form start -->
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-6 offset-3">
+                        <h1 class="text-success text-center fw-bold">Contact Form</h1>
+                        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quos quam
+                            molestias mollitia exercitationem obcaecati perspiciatis modi voluptatum non</p>
+                        <hr>
+                    </div>
+                <div class="col-lg-6 mt-5 mb-3">
+                    <h2 class="text-success text-center fw-bold">Contact Form</h2>
+                    <form onsubmit="validateForm(event)">
+                        <div class="mb-2">
+                            
+                            <input type="text" name="name" placeholder="Enter your name" id="name" class="form-control" id="exampleInputName"
+                                aria-describedby="NameHelp">
+                            <div id="nameError" class="text-danger"></div>
+                        </div>
+                        <div class="mb-2">
+                           
+                            <input type="email" name="email" placeholder="Enter your email" id="email" class="form-control" id="exampleInputEmail">
+                            <div id="emailError" class="text-danger"></div>
+                        </div>
+                        <div class="mb-2">
+                            
+                            <input id="password" type="password" class="form-control" placeholder="Enter your password" id="exampleInputPassword1">
+                            <div id="messageError" class="text-danger"></div>
+                        </div>
+                        <div>
+                            <textarea name="" style="width: 100%; height: 150px;" id="message" placeholder="Enter Your Opinion!"></textarea>
+                        </div>
+                        <div class="mb-2">
+                            
+                            <input id="password" type="file" class="form-control" id="exampleInputPassword1">
+                            <div id="messageError" class="text-danger"></div>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+        <!-- contact form end -->
+    </footer>
 
     <!-- bootstrap connect -->
     <script src="/asset/js/bootstrap.bundle.min.js"></script>
