@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/image/fav-icon.png" type="image/x-icon">
+    <title>Agricultural Farming</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- fonts awosome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.5/css/dataTables.dataTables.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- navbar design start -->
+        <nav>
+            <nav class="navbar navbar-expand-lg bg-success">
+                <div class="container">
+                    <a class="navbar-brand text-white" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#Farming">Farming Guids</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#riceVarities" class="nav-link text-light">Crop Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#petsControl" class="nav-link text-light">Pets Control</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+        <!-- navbar design end -->
+
+        <!-- guids information -->
+        <section id="Farming" class="guids mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-3 text-center fw-bold text-success">
+                        <h1>Guids Information</h1>
+                    </div>
+                    <div class="col-lg-6 offset-3 text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptate nemo illum
+                            doloremque enim eius, dolores culpa quam ab. Distinctio.</p>
+                            <hr>
+                    </div>
+                </div>
+
+
+                <!-- rice row -->
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <div class="parent">
+                            <h3 class="bg-success text-light fw-bold rounded py-1">Crop: Rice</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, debitis. Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Earum, ratione! Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Autem dicta maiores soluta minima vero ad itaque,
+                                consequatur assumenda est amet!</p>
+
+                            <h4 class="text-success">Type Crop: <a href="#"
+                                    class="btn btn-outline-success disabled">Grain</a></h4>
+                            <h4 class="text-success mt-4">Season: <a href="#"
+                                    class="btn btn-outline-success disabled">Grain</a>
+                                <a href="#" class="btn btn-outline-success disabled">July, Dec</a>
+                                <a href="#" class="btn btn-outline-success disabled">Mar,Aug</a>
+                                <a href="#" class="btn btn-outline-success disabled">Dec,Apr,May</a>
+
+                            </h4>
+                        </div>
+
+                        <!-- step by step guids -->
+                        <div class="step-by-step-guids my-5">
+                            <h4 class="text-success fw-bold">step by step guids</h4>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Guids Step -01
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item’s accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It’s also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Guids Step -02
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item’s accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It’s also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Guids Step -03
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item’s accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It’s also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- accordion end -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="heading">
+                            <h3 class="text-success fw-bold">Guids Video</h3>
+                        </div>
+                        <div class="video">
+                            <iframe class="rounded" width="560" height="315"
+                                src="https://www.youtube.com/embed/T1ogWaJdfFA?si=-n2DBz8DM-_GA-vw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                            <h4 class="text-success fw-bold mt-5">Tips and Best Practise</h4>
+                            <div class="flush">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="fw-bold">Tips-01: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                    <li class="list-group-item"><span class="fw-bold">Tips-02: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                    <li class="list-group-item"><span class="fw-bold">Tips-03: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                    <li class="list-group-item"><span class="fw-bold">Tips-04: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> 
+                <hr>
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <div class="parent">
+                            <h3 class="bg-success text-light fw-bold rounded py-1">Crop: Rice</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, debitis. Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Earum, ratione! Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Autem dicta maiores soluta minima vero ad itaque,
+                                consequatur assumenda est amet!</p>
+
+                            <h4 class="text-success">Type Crop: <a href="#"
+                                    class="btn btn-outline-success disabled">Grain</a></h4>
+                            <h4 class="text-success mt-4">Season: <a href="#"
+                                    class="btn btn-outline-success disabled">Grain</a>
+                                <a href="#" class="btn btn-outline-success disabled">July, Dec</a>
+                                <a href="#" class="btn btn-outline-success disabled">Mar,Aug</a>
+                                <a href="#" class="btn btn-outline-success disabled">Dec,Apr,May</a>
+
+                            </h4>
+                        </div>
+
+                        <!-- step by step guids -->
+                        <div class="step-by-step-guids my-5">
+                            <h4 class="text-success fw-bold">step by step guids</h4>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Guids Step -01
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item’s accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It’s also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Guids Step -02
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item’s accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It’s also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Guids Step -03
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item’s accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It’s also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- accordion end -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="heading">
+                            <h3 class="text-success fw-bold">Guids Video</h3>
+                        </div>
+                        <div class="video">
+                            <iframe class="rounded" width="560" height="315"
+                                src="https://www.youtube.com/embed/T1ogWaJdfFA?si=-n2DBz8DM-_GA-vw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                            <h4 class="text-success fw-bold mt-5">Tips and Best Practise</h4>
+                            <div class="flush">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="fw-bold">Tips-01: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                    <li class="list-group-item"><span class="fw-bold">Tips-02: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                    <li class="list-group-item"><span class="fw-bold">Tips-03: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                    <li class="list-group-item"><span class="fw-bold">Tips-04: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <div class="parent">
+                            <h3 class="bg-success text-light fw-bold rounded py-1">Crop: Rice</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, debitis. Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Earum, ratione! Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Autem dicta maiores soluta minima vero ad itaque,
+                                consequatur assumenda est amet!</p>
+
+                            <h4 class="text-success">Type Crop: <a href="#"
+                                    class="btn btn-outline-success disabled">Grain</a></h4>
+                            <h4 class="text-success mt-4">Season: <a href="#"
+                                    class="btn btn-outline-success disabled">Grain</a>
+                                <a href="#" class="btn btn-outline-success disabled">July, Dec</a>
+                                <a href="#" class="btn btn-outline-success disabled">Mar,Aug</a>
+                                <a href="#" class="btn btn-outline-success disabled">Dec,Apr,May</a>
+
+                            </h4>
+                        </div>
+
+                        <!-- step by step guids -->
+                        <div class="step-by-step-guids my-5">
+                            <h4 class="text-success fw-bold">step by step guids</h4>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Guids Step -01
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item’s accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It’s also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Guids Step -02
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item’s accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It’s also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Guids Step -03
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item’s accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It’s also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- accordion end -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="heading">
+                            <h3 class="text-success fw-bold">Guids Video</h3>
+                        </div>
+                        <div class="video">
+                            <iframe class="rounded" width="560" height="315"
+                                src="https://www.youtube.com/embed/T1ogWaJdfFA?si=-n2DBz8DM-_GA-vw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                            <h4 class="text-success fw-bold mt-5">Tips and Best Practise</h4>
+                            <div class="flush">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="fw-bold">Tips-01: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                    <li class="list-group-item"><span class="fw-bold">Tips-02: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                    <li class="list-group-item"><span class="fw-bold">Tips-03: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                    <li class="list-group-item"><span class="fw-bold">Tips-04: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <div class="parent">
+                            <h3 class="bg-success text-light fw-bold rounded py-1">Crop: Rice</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, debitis. Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Earum, ratione! Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Autem dicta maiores soluta minima vero ad itaque,
+                                consequatur assumenda est amet!</p>
+
+                            <h4 class="text-success">Type Crop: <a href="#"
+                                    class="btn btn-outline-success disabled">Grain</a></h4>
+                            <h4 class="text-success mt-4">Season: <a href="#"
+                                    class="btn btn-outline-success disabled">Grain</a>
+                                <a href="#" class="btn btn-outline-success disabled">July, Dec</a>
+                                <a href="#" class="btn btn-outline-success disabled">Mar,Aug</a>
+                                <a href="#" class="btn btn-outline-success disabled">Dec,Apr,May</a>
+
+                            </h4>
+                        </div>
+
+                        <!-- step by step guids -->
+                        <div class="step-by-step-guids my-5">
+                            <h4 class="text-success fw-bold">step by step guids</h4>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Guids Step -01
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item’s accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It’s also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Guids Step -02
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item’s accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It’s also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Guids Step -03
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item’s accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It’s also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- accordion end -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="heading">
+                            <h3 class="text-success fw-bold">Guids Video</h3>
+                        </div>
+                        <div class="video">
+                            <iframe class="rounded" width="560" height="315"
+                                src="https://www.youtube.com/embed/T1ogWaJdfFA?si=-n2DBz8DM-_GA-vw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                            <h4 class="text-success fw-bold mt-5">Tips and Best Practise</h4>
+                            <div class="flush">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="fw-bold">Tips-01: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                    <li class="list-group-item"><span class="fw-bold">Tips-02: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                    <li class="list-group-item"><span class="fw-bold">Tips-03: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                    <li class="list-group-item"><span class="fw-bold">Tips-04: </span>Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Cupiditate, obcaecati.</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- guids information -->
+
+    </footer>
+
+    <!-- bootstrap connect -->
+    <script src="/asset/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.5/css/dataTables.dataTables.min.css"></script>
+    <script src="/asset/js/custome.js"></script>
+</body>
+
+</html>

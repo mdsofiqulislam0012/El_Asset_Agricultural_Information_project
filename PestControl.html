@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/image/fav-icon.png" type="image/x-icon">
+    <title>Agricultural Farming</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- fonts awosome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.5/css/dataTables.dataTables.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- navbar design start -->
+        <nav>
+            <nav class="navbar navbar-expand-lg bg-success">
+                <div class="container">
+                    <a class="navbar-brand text-white" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="farming.html">Farming Guids</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#riceVarities" class="nav-link text-light">Crop Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#petsControl" class="nav-link text-light">Pets Control</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+        <!-- navbar design end -->
+    </header>
+    <main>
+        <!-- pets control section -->
+        <section id="petsControl" class="Pest-Control-Strategies mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-3">
+                        <h1 class="text-success text-center fw-bold">Pest Control Strategies</h1>
+                        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quos quam
+                            molestias mollitia exercitationem obcaecati perspiciatis modi voluptatum non</p>
+                        <hr>
+                    </div>
+
+                    <!-- tabil -->
+                    <table id="myTable" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Pets Name</th>
+                                <th>Image</th>
+                                <th>Biologycal Controls</th>
+                                <th>Organic Controls</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cluck Norris</td>
+                                      <!-- pets image -->
+                                <td>                        </td> 
+                                <td>
+                                    <p>Details for pets control</p>
+                                </td>
+                                <td>
+                                    <p>Details for pets control</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Daisy</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>Snowball</td>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>@social</td>
+                            </tr>
+                            <tr>
+                                <td> beetles</td>
+                                <td>Arefin</td>
+                                <td>Beo</td>
+                                <td>@social</td>
+                            </tr>
+                            <tr>
+                                <td> potato</td>
+                                <td>Rafik</td>
+                                <td>CDO</td>
+                                <td>@social</td>
+                            </tr>
+                            <tr>
+                                <td> Colorado</td>
+                                <td>Shohidul</td>
+                                <td>CEO</td>
+                                <td>@social</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- tabil -->
+                </div>
+            </div>
+        </section>
+        <!-- pets control section -->
+    </main>
+    <footer>
+        <!-- contact form start -->
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-6 offset-3">
+                        <h1 class="text-success text-center fw-bold">Contact Form</h1>
+                        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quos quam
+                            molestias mollitia exercitationem obcaecati perspiciatis modi voluptatum non</p>
+                        <hr>
+                    </div>
+                <div class="col-lg-6 mt-5 mb-3">
+                    <h2 class="text-success text-center fw-bold">Contact Form</h2>
+                    <form onsubmit="validateForm(event)">
+                        <div class="mb-2">
+                            
+                            <input type="text" name="name" placeholder="Enter your name" id="name" class="form-control" id="exampleInputName"
+                                aria-describedby="NameHelp">
+                            <div id="nameError" class="text-danger"></div>
+                        </div>
+                        <div class="mb-2">
+                           
+                            <input type="email" name="email" placeholder="Enter your email" id="email" class="form-control" id="exampleInputEmail">
+                            <div id="emailError" class="text-danger"></div>
+                        </div>
+                        <div class="mb-2">
+                            
+                            <input id="password" type="password" class="form-control" placeholder="Enter your password" id="exampleInputPassword1">
+                            <div id="messageError" class="text-danger"></div>
+                        </div>
+                        <div>
+                            <textarea name="" style="width: 100%; height: 150px;" id="message" placeholder="Enter Your Opinion!"></textarea>
+                        </div>
+                        <div class="mb-2">
+                            
+                            <input id="password" type="file" class="form-control" id="exampleInputPassword1">
+                            <div id="messageError" class="text-danger"></div>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text-primary fw-bold mt-5">Dirrect Communications</h2>
+                    <div class="border py-3 px-4">
+                        <p>Md.Sofiqul Islam (shams)</p>
+                    <p>Contact: Phone number</p>
+                    <p>Contact: email</p>
+                    <p>Contact: Address</p>
+                    </div>
+                    <div class="border py-3 px-4 mt-3">
+                        <p>Md.Sofiqul Islam (shams)</p>
+                    <p>Contact: Phone number</p>
+                    <p>Contact: email</p>
+                    <p>Contact: Address</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact form end -->
+
+        <!-- back to home -->
+         <section>
+            <button class="btn btn-primary w-100"><a href="index.html" class="text-white text-decoration-none">Back to Home</a></button>
+         </section>
+        <!-- back to home -->
+    </footer>
+
+    <!-- bootstrap connect -->
+    <script src="/asset/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.5/css/dataTables.dataTables.min.css"></script>
+    <script src="/asset/js/custome.js"></script>
+</body>
+
+</html>
